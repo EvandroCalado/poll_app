@@ -6,10 +6,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Evandro Calado",
   "license": "ISC",
-  "description": "",
+  "description": "Poll app with design patterns and SOLID principles",
   "devDependencies": {
-    "git-commit-msg-linter": "^5.0.8"
+    "@types/node": "^22.7.4",
+    "git-commit-msg-linter": "^5.0.8",
+    "typescript": "^5.6.2"
   }
 }
