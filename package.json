@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
+    "test:staged": "vitest --run",
     "prepare": "husky"
   },
   "keywords": [],
@@ -14,10 +15,13 @@
     "@eslint/js": "^9.12.0",
     "@types/node": "^22.7.4",
     "eslint": "^9.12.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "git-commit-msg-linter": "^5.0.8",
     "globals": "^15.10.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.8.0",
     "vitest": "^2.1.2"
