@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
-    "test:staged": "vitest --run",
+    "test:staged": "vitest --run --passWithNoTests",
     "prepare": "husky"
   },
   "keywords": [],
