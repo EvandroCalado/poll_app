@@ -4,7 +4,7 @@ import { httpRequest, httpResponse } from '../protocols/http';
 
 export class SignupController {
   handle(httpRequest: httpRequest): httpResponse {
-    const requiredFilds = ['name', 'email', 'password'];
+    const requiredFilds = ['name', 'email', 'password', 'passwordConfirmation'];
 
     for (const field of requiredFilds) {
       if (!httpRequest.body[field]) {
