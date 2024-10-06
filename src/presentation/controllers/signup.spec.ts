@@ -2,9 +2,13 @@ import { describe, expect, it } from 'vitest';
 import { MissingParamError } from '../errors/missing-param-error';
 import { SignupController } from './signup';
 
+const makeSut = (): SignupController => {
+  return new SignupController();
+};
+
 describe('Signup Controller', () => {
   it('should return 400 if no name is provided', () => {
-    const sut = new SignupController();
+    const sut = makeSut();
 
     const httpRequest = {
       body: {
@@ -21,7 +25,7 @@ describe('Signup Controller', () => {
   });
 
   it('should return 400 if no email is provided', () => {
-    const sut = new SignupController();
+    const sut = makeSut();
 
     const httpRequest = {
       body: {
@@ -38,7 +42,7 @@ describe('Signup Controller', () => {
   });
 
   it('should return 400 if no password is provided', () => {
-    const sut = new SignupController();
+    const sut = makeSut();
 
     const httpRequest = {
       body: {
@@ -55,7 +59,7 @@ describe('Signup Controller', () => {
   });
 
   it('should return 400 if no password confirmation is provided', () => {
-    const sut = new SignupController();
+    const sut = makeSut();
 
     const httpRequest = {
       body: {
